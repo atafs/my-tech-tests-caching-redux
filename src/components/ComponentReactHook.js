@@ -1,10 +1,9 @@
 import React from 'react';
 import { useResponse } from '../hooks/react/useResponse';
 
-
-const FuncComponent = () => {
+const ComponentReactHook = () => {
     const resp = useResponse();
-    console.log("resp", resp);
+    console.log("resp react hooks", resp);
 
     return (
         <>
@@ -19,4 +18,4 @@ const FuncComponent = () => {
 }
 
 
-export default FuncComponent;
+export default ComponentReactHook;

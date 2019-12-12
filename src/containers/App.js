@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import './App.css';
-import FuncComponent from '../components/FuncComponent';
+import ComponentReactHook from '../components/ComponentReactHook';
+import ComponentReduxHook from '../components/ComponentReduxHook';
 import { responseRequest } from '../store/actions/responseActions';
 
 class App extends Component {
@@ -17,7 +18,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <FuncComponent />
+          <ComponentReactHook />
         </header>
       </div>
     );
