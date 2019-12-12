@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import events from '../services/endpoints';
-import { get } from '../services/axiosAPI';
+import { getEvents as events } from '../../services/endpoints';
+import { get } from '../../services/axiosAPI';
 
 const useResponse = () => {
     const [response, updateResp] = useState(undefined);

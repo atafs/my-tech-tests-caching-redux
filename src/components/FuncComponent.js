@@ -1,5 +1,5 @@
 import React from 'react';
-import { useResponse } from '../hooks/useResponse';
+import { useResponse } from '../hooks/react/useResponse';
 
 
 const FuncComponent = () => {

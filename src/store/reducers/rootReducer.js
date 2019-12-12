@@ -1,4 +1,13 @@
 import { combineReducers } from 'redux';
-import response from './response/responseReducer';
+import generateStore from '../store';
+import responseReducer from './response/responseReducer';
 
-export default combineReducers({ response });
+const createReducers = () => {
+    const rootReducer = combineReducers({
+        response: responseReducer
+    })
+
+    return generateStore(rootReducer)
+}
+
+export default createReducers
